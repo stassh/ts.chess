@@ -1,0 +1,26 @@
+@startuml Deploy to INT
+
+class Point {
+  - x: number
+  - y: number
+  + {abstract} getX(): number
+  + {abstract} getY(): number
+}
+
+interface Figure {
+  + {abstract} hasAnyMove(): boolean
+  + {abstract} getValidMoveArray(): Point[]
+  + {abstract} getCurrentPosition(): Point
+}
+
+interface Controller {
+  + {abstract} start()
+  + {abstract} nextTurn()
+  + {abstract} init()
+}
+
+@enduml
+
+' Extension 	<|--
+' Composition 	*--
+' Aggregation 	o--
