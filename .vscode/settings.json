@@ -1,0 +1,15 @@
+{
+
+  "git.ignoreLimitWarning": true,
+
+  "plantuml.server": "http://localhost:8080/uml",
+  "plantuml.diagramsRoot": "docs/diagrams/src",
+  "plantuml.exportOutDir": "docs/diagrams/out",
+
+  "editor.tabSize": 2,
+  "prettier.tabWidth": 2,
+  "workbench.colorTheme": "Material Theme Lighter",
+
+  "files.autoSave": "afterDelay",
+
+}
