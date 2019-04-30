@@ -11,5 +11,7 @@
   "workbench.colorTheme": "Material Theme Lighter",
 
   "files.autoSave": "afterDelay",
-
+  "files.exclude": {
+    "**/node_modules": true,
+  }
 }
