@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CatalogService } from '../catalog.service';
+import { OpdsLink } from '../OpdsLinks';
 
 @Component({
   selector: 'app-catalog',
@@ -7,13 +8,15 @@ import { CatalogService } from '../catalog.service';
   styleUrls: ['./catalog.component.css']
 })
 export class CatalogComponent implements OnInit {
-  links: string[];
+  opdsLinks: OpdsLink[] = [];
   constructor(private catalogService: CatalogService) {
 
   }
 
-  ngOnInit() {
-    this.catalogService.getCatalog();
+  async ngOnInit() {
+    this.opdsLinks = await this.catalogService.getCatalog();
+    // this.opdsLinks = [ "link 1", "link 2"];
+
   }
 
 }

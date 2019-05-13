@@ -1,3 +1,11 @@
-<p>
-  catalog works!
-</p>
+<div *ngIf="opdsLinks">
+    <p>catalog</p>
+    <ul class="catalog">
+
+        <li *ngFor="let opdsLink of opdsLinks">
+            <a routerLink="/detail/{{ opdsLink }}">
+                <span class="badge">{{ opdsLink.name }}</span> {{ opdsLink.path }}
+            </a>
+        </li>
+    </ul>
+</div>
