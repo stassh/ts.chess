@@ -3,8 +3,8 @@
     <ul class="catalog">
 
         <li *ngFor="let opdsLink of opdsLinks">
-            <a routerLink="/detail/{{ opdsLink }}">
-                <span class="badge">{{ opdsLink.name }}</span> {{ opdsLink.path }}
+            <a routerLink="/catalog{{ opdsLink.path }}">
+                <span class="badge">{{ opdsLink.id }}</span> {{ opdsLink.name }}
             </a>
         </li>
     </ul>

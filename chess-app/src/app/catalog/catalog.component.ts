@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CatalogService } from '../catalog.service';
 import { OpdsLink } from '../OpdsLinks';
+import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-catalog',
@@ -9,14 +11,15 @@ import { OpdsLink } from '../OpdsLinks';
 })
 export class CatalogComponent implements OnInit {
   opdsLinks: OpdsLink[] = [];
-  constructor(private catalogService: CatalogService) {
-
+  constructor(
+    private catalogService: CatalogService,
+    private route: ActivatedRoute,
+    private location: Location) {
   }
 
   async ngOnInit() {
-    this.opdsLinks = await this.catalogService.getCatalog();
-    // this.opdsLinks = [ "link 1", "link 2"];
-
+    const path = this.route.snapshot.paramMap.get("path");
+    console.log(`Path from route: ${path}`);
+    this.opdsLinks = await this.catalogService.getCatalog(path);
   }
-
 }

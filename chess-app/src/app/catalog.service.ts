@@ -8,27 +8,30 @@ import { OpdsLink } from './OpdsLinks';
   providedIn: 'root'
 })
 export class CatalogService {
-  static remoteServer = "http://flibusta.is/opds";
+  static remoteServer = "http://flibusta.is/";
   constructor(private messageService: MessageService, private http: HttpClient) {
 
   }
 
 
-  async getCatalog(): Promise<OpdsLink[]> {
+  async getCatalog(href: string): Promise<OpdsLink[]> {
     try {
       const links: OpdsLink[] = [];
-      const value = await this.getOpds();
+      console.log(href);
+      const value = await this.getOpds(href);
+      console.log(value);
+
       const catalog = await this.parseXml(value);
 
       // console.log(JSON.stringify(catalog));
 
       catalog.feed.entry.forEach(entry => {
-        links.push( { name: entry.title[0], path: entry.link[0].$.href } );
+        links.push( new OpdsLink(entry) );
       });
 
       return links;
     } catch (error) {
-      console.log(`${error}`);
+      console.log(`${error.message}`);
     }
   }
 
@@ -45,19 +48,11 @@ export class CatalogService {
              }
         });
     });
-    // parseString(xmlStr, (error, result) => {
-    //   if (error) {
-    //     throw error;
-    //   } else {
-    //     console.log(result);
-    //     return result;
-    //   }
-    // });
   }
 
-  private async getOpds(): Promise<string> {
+  private async getOpds(href: string): Promise<string> {
     const headers = new HttpHeaders();
     this.messageService.add('CatalogService: fetched catalog');
-    return this.http.get(CatalogService.remoteServer + '', { headers, responseType: "text" }).toPromise();
+    return this.http.get(`${CatalogService.remoteServer}${href}`, { headers, responseType: "text" }).toPromise();
   }
 }
