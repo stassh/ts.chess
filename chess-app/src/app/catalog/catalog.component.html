@@ -1,43 +1,44 @@
 <div *ngIf="feed">
-  <ul class="catalog">
-    <div class="col-9">
-      <div class="row">
-        <div class="col-2">
-          <div
-            *ngFor="let icon of feed.icons"
-            class="row justify-content-center"
-          >
-            <img [src]="icon" class="img-thumbnail" />
-          </div>
-        </div>
-        <div *ngFor="let title of feed.titles" class="col-10">
-          {{ title }}
-        </div>
-        <div class="col-2">
-          <div class="row">
-            <li *ngFor="let link of feed.links">
-              <a
-                [routerLink]="['/catalog']"
-                [queryParams]="{ path: link.href }"
-              >
-                <span class="badge col-12">{{ link.rel }}</span>
-              </a>
-            </li>
+
+  <div class="row">
+    <div class="col">
+      <div *ngFor="let icon of feed.icons" class="row justify-content-center">
+        <img [src]="icon" class="img-thumbnail" />
+      </div>
+    </div>
+    <div class="col" *ngFor="let title of feed.titles">
+      {{ title }}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col" *ngFor="let link of feed.links">
+      <a [routerLink]="['/catalog']" [queryParams]="{ path: link.href }">
+        <span class="badge">{{ link.rel }}</span>
+      </a>
+    </div>
+  </div>
+
+  <div *ngFor="let entry of feed.entries">
+    <div class="row" *ngIf="entry.picture">
+      <div class="media">
+        <img class="img-rounded" [src]="entry.picture.href" height="200px" />
+        <div class="media-body">
+          <div *ngFor="let downloadLink of entry.downloadLinks">
+            <a class="col" [href]="downloadLink.href" target="_blank" rel="noopener noreferrer" >
+              <span class="badge">{{ downloadLink.href }}</span>
+            </a>
           </div>
         </div>
       </div>
     </div>
-    <div class="col-9">
-      <li class="row" *ngFor="let entry of feed.entries">
-        <a
-          class="col-9"
-          [routerLink]="['/catalog']"
-          [queryParams]="{ path: entry.links[0].href }"
-        >
-          <span class="badge">{{ entry.titles[0] }}</span>
-          <div [innerHTML]="entry.contents[0]"></div>
-        </a>
-      </li>
+
+    <div class="row" *ngIf="entry.links">
+      <a class="col" [routerLink]="['/catalog']" [queryParams]="{ path: entry.links[0].href }">
+        <span class="badge">{{ entry.titles[0] }}</span>
+        <div [innerHTML]="entry.contents[0]"></div>
+      </a>
     </div>
-  </ul>
+  </div>
+
 </div>

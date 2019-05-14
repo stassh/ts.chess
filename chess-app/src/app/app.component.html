@@ -1,12 +1,16 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div>
-    <h1>{{ title }}</h1>
-    <nav>
-        <a routerLink="/catalog" [queryParams]="{ path: 'opds' }">Catalog</a>
-        <a routerLink="/dashboard">Dashboard</a>
-        <a routerLink="/heroes">Heroes</a>
+<div class="container">
+  <div class="col">
+    <div class="row">
+      <div class="text-capitalize">{{ title }}</div>
+    </div>
+    <nav class="row">
+      <a routerLink="/catalog" [queryParams]="{ path: 'opds' }">Catalog</a>
+      <a routerLink="/dashboard">Dashboard</a>
+      <a routerLink="/heroes">Heroes</a>
     </nav>
-    <router-outlet></router-outlet>
+    <router-outlet class="row"></router-outlet>
     <!-- <app-heroes></app-heroes> -->
-    <app-messages></app-messages>
+    <app-messages class="row"></app-messages>
+  </div>
 </div>

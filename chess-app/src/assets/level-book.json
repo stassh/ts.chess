@@ -1,70 +1,313 @@
 {
   "path": [],
-  "id": ["tag:author:32154"],
-  "contents": [],
-  "links": [
-    { "href": "/opds-opensearch.xml", "rel": "search" },
-    { "href": "/opds/search?searchTerm={searchTerms}", "rel": "search" },
-    { "href": "/opds", "rel": "start" }
+  "id": [
+    "tag:search:new:book:0"
   ],
-  "titles": ["Книги автора Кронин Джастин"],
-  "icons": ["http://flibusta.is//favicon.ico"],
-  "entries": [
+  "contents": [],
+  "links": [{
+      "href": "/opds-opensearch.xml",
+      "rel": "search"
+    },
     {
-      "titles": ["Об авторе"],
+      "href": "/opds/search?searchTerm={searchTerms}",
+      "rel": "search"
+    },
+    {
+      "href": "/opds",
+      "rel": "start"
+    }
+  ],
+  "titles": [
+    "Новинки с 07.05.2019 по 14.05.2019"
+  ],
+  "icons": [
+    "http://flibusta.is//favicon.ico"
+  ],
+  "entries": [{
+      "titles": [
+        "Османский узел"
+      ],
       "contents": [
-        "<img src=\"/ia/70/74570/kronin.jpg\" align=left style=\"border:5px solid #ededed; margin: 12px;\"><p><span style=\"font-weight:bold\">Джастин Кронин</span> (англ. <span style=\"font-weight:bold\">Justin Cronin</span>)<br />\nАмериканский писатель, уже  заработавший на вампирах  бешеные деньги и активно раскручиваемый в США.<br />\nРодился в 1962 году в Новой Англии (США).<br />\nЕго роман «Переход» (The Passage) занимает  третью строчку в списке бестселлеров NewYorkTimes. Эпическое полотно на 766-ти страницах рассказывает о кровожадных чудовищах, которые  по ночам безжалостно убивают людей. Это – первая часть трилогии.<br />\nУже идут переговоры об экранизации романа. Права на трилогию проданы издательству за 3, 75 миллионов долларов, а на экранизацию романа студии Fox 2000 за 1,75 млн.<br />\nСайт писателя - <a href=\"http://enterthepassage.com/\">http://enterthepassage.com/</a><br />\n<a href=\"http://www.fantasticfiction.co.uk/c/justin-cronin/\">Библиография</a><br />\n<span style=\"font-weight:bold\">Novels</span><br />\n2001 - Mary and O'Neil<br />\n2004 - The Summer Guest<br />\nSeries <span style=\"font-weight:bold\">Passage</span> - <span style=\"font-weight:bold\">Перерождение</span><br />\n2009 - 1. The Passage - Перерождение<br />\n2012 - 2. The Twelve<br />\n2016 - 3. The City of Mirrors</p>\n"
+        "\n    <p class=\"book\">Возникшее неожиданно для всей Европы королевство под названием Италия. И Борджиа, на голове которого оказалась древняя Железная корона… Одного этого было бы достаточно для резкого изменения политики сопредельных стран. Однако если настало время перемен, то пламя разгорается сразу в нескольких местах. Вот и находящиеся на грани войны Османская империя и республика Венеция способны втянуть в орбиту начинающегося конфликта многих участников. Но разве это не может быть удачным поводом для Чезаре Борджиа, чтобы вновь оживить дух Крестовых походов… только уже новых, в которых религиозная мишура окончательно уступает место холодному расчёту и жестоким идеалам выходца из XXI века.</p>\n   <br/>Год издания: 2019<br/>Формат: fb2<br/>Язык: ru<br/>Размер: 1264 Kb<br/>Скачиваний: 939<br/>Серия: Борджиа #4<br/>"
       ],
       "id": [],
-      "links": [
+      "links": [{
+          "href": "/opds/author/158471",
+          "rel": "related"
+        },
         {
-          "href": "/ia/70/74570/kronin.jpg",
+          "href": "/opds/sequencebooks/54086",
+          "rel": "related"
+        },
+        {
+          "href": "/i/68/551768/cover.jpg",
           "rel": "http://opds-spec.org/image"
         },
-        { "href": "/ia/70/74570/kronin.jpg", "rel": "x-stanza-cover-image" },
         {
-          "href": "/ia/70/74570/kronin.jpg",
-          "rel": "http://opds-spec.org/image/thumbnail"
+          "href": "/i/68/551768/cover.jpg",
+          "rel": "x-stanza-cover-image"
         },
         {
-          "href": "/ia/70/74570/kronin.jpg",
+          "href": "/i/68/551768/cover.jpg",
+          "rel": "http://opds-spec.org/thumbnail"
+        },
+        {
+          "href": "/i/68/551768/cover.jpg",
           "rel": "x-stanza-cover-image-thumbnail"
         },
-        { "href": "/a/32154", "rel": "alternate" },
-        { "href": "/a/32154", "rel": "http://opds-spec.org/acquisition" },
         {
-          "href": "/opds/authorsequences/32154",
-          "rel": "http://www.feedbooks.com/opds/facet"
+          "href": "/b/551768/fb2",
+          "rel": "http://opds-spec.org/acquisition/open-access"
         },
         {
-          "href": "/opds/authorsequenceless/32154",
-          "rel": "http://www.feedbooks.com/opds/facet"
+          "href": "/b/551768/html",
+          "rel": "http://opds-spec.org/acquisition/open-access"
+        },
+        {
+          "href": "/b/551768/txt",
+          "rel": "http://opds-spec.org/acquisition/open-access"
+        },
+        {
+          "href": "/b/551768/rtf",
+          "rel": "http://opds-spec.org/acquisition/open-access"
+        },
+        {
+          "href": "/b/551768/epub",
+          "rel": "http://opds-spec.org/acquisition/open-access"
+        },
+        {
+          "href": "/b/551768/mobi",
+          "rel": "http://opds-spec.org/acquisition/open-access"
+        },
+        {
+          "href": "/b/551768",
+          "rel": "alternate"
         }
       ]
     },
     {
-      "titles": ["Книги по сериям"],
-      "contents": [],
+      "titles": [
+        "Еще один баловень судьбы"
+      ],
+      "contents": [
+        "\n    <p class=\"book\">Приключения попаданца в революционной Франции.</p>\n   <br/>Год издания: 2019<br/>Формат: fb2<br/>Язык: ru<br/>Размер: 954 Kb<br/>Скачиваний: 448<br/>"
+      ],
       "id": [],
-      "links": [{ "href": "/opds/authorsequences/32154" }]
+      "links": [{
+          "href": "/opds/author/170344",
+          "rel": "related"
+        },
+        {
+          "href": "/i/61/551761/cover.png",
+          "rel": "http://opds-spec.org/image"
+        },
+        {
+          "href": "/i/61/551761/cover.png",
+          "rel": "x-stanza-cover-image"
+        },
+        {
+          "href": "/i/61/551761/cover.png",
+          "rel": "http://opds-spec.org/thumbnail"
+        },
+        {
+          "href": "/i/61/551761/cover.png",
+          "rel": "x-stanza-cover-image-thumbnail"
+        },
+        {
+          "href": "/b/551761/fb2",
+          "rel": "http://opds-spec.org/acquisition/open-access"
+        },
+        {
+          "href": "/b/551761/html",
+          "rel": "http://opds-spec.org/acquisition/open-access"
+        },
+        {
+          "href": "/b/551761/txt",
+          "rel": "http://opds-spec.org/acquisition/open-access"
+        },
+        {
+          "href": "/b/551761/rtf",
+          "rel": "http://opds-spec.org/acquisition/open-access"
+        },
+        {
+          "href": "/b/551761/epub",
+          "rel": "http://opds-spec.org/acquisition/open-access"
+        },
+        {
+          "href": "/b/551761/mobi",
+          "rel": "http://opds-spec.org/acquisition/open-access"
+        },
+        {
+          "href": "/b/551761",
+          "rel": "alternate"
+        }
+      ]
     },
     {
-      "titles": ["Книги вне серий"],
-      "contents": [],
+      "titles": [
+        "Эффект бабочки"
+      ],
+      "contents": [
+        "\n    <p class=\"book\">Веймарская республика, марширующие по улицам отряды штурмовиков и бесноватый Адольф, который всего лишь присматривается к власти. Три человека разного возраста и жизненного опыта, случайно оказавшиеся вместе. Наши современники в Германии 1927 года. Российский бизнесмен, бывший чиновник немаленького ранга, мечтает встать наравне с Ротшильдами, Морганами и Рокфеллерами. Любой ценой! Русский бандит с канонической биографией «спортсмен-армия-зона» сам толком не знает, чего хочет, но рассказы о героическом дедушке-коминтерновце не дают покоя. Русский студент… а вот тут сложней. «Русский немец» без капли русской крови, стажёр немецкой БФФ, федерального ведомства по охране конституции. Его долг — вывести Германию из надвигающейся мировой бойни, не допустить нацистской диктатуры… а вот как, вопрос не самый простой. Недоучившийся студент, мальчишка-стажёр… У каждого свои интересы, своё виденье будущего, и ни малейшего повода доверять друг другу.</p>\n   <br/>Год издания: 2019<br/>Формат: fb2<br/>Язык: ru<br/>Размер: 853 Kb<br/>Скачиваний: 1667<br/>Серия: Великая Депрессия #1<br/>"
+      ],
       "id": [],
-      "links": [{ "href": "/opds/author/32154/authorsequenceless" }]
+      "links": [{
+          "href": "/opds/author/163038",
+          "rel": "related"
+        },
+        {
+          "href": "/opds/sequencebooks/57764",
+          "rel": "related"
+        },
+        {
+          "href": "/i/31/551531/cover.jpg",
+          "rel": "http://opds-spec.org/image"
+        },
+        {
+          "href": "/i/31/551531/cover.jpg",
+          "rel": "x-stanza-cover-image"
+        },
+        {
+          "href": "/i/31/551531/cover.jpg",
+          "rel": "http://opds-spec.org/thumbnail"
+        },
+        {
+          "href": "/i/31/551531/cover.jpg",
+          "rel": "x-stanza-cover-image-thumbnail"
+        },
+        {
+          "href": "/b/551531/fb2",
+          "rel": "http://opds-spec.org/acquisition/open-access"
+        },
+        {
+          "href": "/b/551531/html",
+          "rel": "http://opds-spec.org/acquisition/open-access"
+        },
+        {
+          "href": "/b/551531/txt",
+          "rel": "http://opds-spec.org/acquisition/open-access"
+        },
+        {
+          "href": "/b/551531/rtf",
+          "rel": "http://opds-spec.org/acquisition/open-access"
+        },
+        {
+          "href": "/b/551531/epub",
+          "rel": "http://opds-spec.org/acquisition/open-access"
+        },
+        {
+          "href": "/b/551531/mobi",
+          "rel": "http://opds-spec.org/acquisition/open-access"
+        },
+        {
+          "href": "/b/551531",
+          "rel": "alternate"
+        }
+      ]
     },
     {
-      "titles": ["Книги по алфавиту"],
-      "contents": [],
+      "titles": [
+        "Время возвращаться домой"
+      ],
+      "contents": [
+        "\n    <p class=\"book\">Главный герой - военный. А войны тут нет.</p>\n    <p class=\"book\">Попаданец. Только не от нас \"туда\", а наоборот - свежеиспеченный лейтенант из предвоенного июня 41-го в наше время.</p>\n   <br/>Год издания: 2011<br/>Формат: fb2<br/>Язык: ru<br/>Размер: 503 Kb<br/>Скачиваний: 1968<br/>"
+      ],
       "id": [],
-      "links": [{ "href": "/opds/author/32154/alphabet" }]
+      "links": [{
+          "href": "/opds/author/46823",
+          "rel": "related"
+        },
+        {
+          "href": "/b/551437/fb2",
+          "rel": "http://opds-spec.org/acquisition/open-access"
+        },
+        {
+          "href": "/b/551437/html",
+          "rel": "http://opds-spec.org/acquisition/open-access"
+        },
+        {
+          "href": "/b/551437/txt",
+          "rel": "http://opds-spec.org/acquisition/open-access"
+        },
+        {
+          "href": "/b/551437/rtf",
+          "rel": "http://opds-spec.org/acquisition/open-access"
+        },
+        {
+          "href": "/b/551437/epub",
+          "rel": "http://opds-spec.org/acquisition/open-access"
+        },
+        {
+          "href": "/b/551437/mobi",
+          "rel": "http://opds-spec.org/acquisition/open-access"
+        },
+        {
+          "href": "/b/551437",
+          "rel": "alternate"
+        }
+      ]
     },
     {
-      "titles": ["Книги по дате поступления"],
-      "contents": [],
+      "titles": [
+        "Во все тяжкие"
+      ],
+      "contents": [
+        "\n    <p class=\"book\">Это были 90-е, мы выживали, как могли… Приключения попаданца из нашего времени в середину 90-х. Как он использует свой химический дар? Запрещённые вещества? Лекарства? Новые технологии? Всё это Вы узнаете, прочитав эту книгу!</p>\n   <br/>Год издания: 2018<br/>Формат: fb2<br/>Язык: ru<br/>Размер: 1075 Kb<br/>Скачиваний: 7499<br/>Серия: Во все тяжкие #1<br/>"
+      ],
       "id": [],
-      "links": [{ "href": "/opds/author/32154/time" }]
+      "links": [{
+          "href": "/opds/author/122695",
+          "rel": "related"
+        },
+        {
+          "href": "/opds/sequencebooks/57720",
+          "rel": "related"
+        },
+        {
+          "href": "/i/32/551332/cover.jpg",
+          "rel": "http://opds-spec.org/image"
+        },
+        {
+          "href": "/i/32/551332/cover.jpg",
+          "rel": "x-stanza-cover-image"
+        },
+        {
+          "href": "/i/32/551332/cover.jpg",
+          "rel": "http://opds-spec.org/thumbnail"
+        },
+        {
+          "href": "/i/32/551332/cover.jpg",
+          "rel": "x-stanza-cover-image-thumbnail"
+        },
+        {
+          "href": "/b/551332/fb2",
+          "rel": "http://opds-spec.org/acquisition/open-access"
+        },
+        {
+          "href": "/b/551332/html",
+          "rel": "http://opds-spec.org/acquisition/open-access"
+        },
+        {
+          "href": "/b/551332/txt",
+          "rel": "http://opds-spec.org/acquisition/open-access"
+        },
+        {
+          "href": "/b/551332/rtf",
+          "rel": "http://opds-spec.org/acquisition/open-access"
+        },
+        {
+          "href": "/b/551332/epub",
+          "rel": "http://opds-spec.org/acquisition/open-access"
+        },
+        {
+          "href": "/b/551332/mobi",
+          "rel": "http://opds-spec.org/acquisition/open-access"
+        },
+        {
+          "href": "/b/551332",
+          "rel": "alternate"
+        }
+      ]
     }
   ]
 }

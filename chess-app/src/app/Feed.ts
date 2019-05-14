@@ -47,6 +47,9 @@ export class Entry {
   id: string[] = [];
   links: Link[] = [];
 
+  picture: Link;
+  downloadLinks: Link[];
+
   constructor(rawEntry: any, basePath: string) {
     this.titles.push(...rawEntry.title);
 
@@ -55,6 +58,15 @@ export class Entry {
     this.contents.push(...contents.map(content => content._));
 
     Utils.addLinks(rawEntry, this.links, basePath);
+
+    this.picture = this.links.find(item => item.rel === LinkTypes.IMAGE);
+    if (this.picture !== undefined) {
+      this.picture.href = `${basePath}${this.picture.href}`;
+      console.log(`${JSON.stringify(this.picture)}`);
+    }
+
+    this.downloadLinks = this.links.filter(item => item.rel === LinkTypes.DOWNLOAD_LINK).map(item => { return { rel: item.rel, href: `${basePath}${item.href}` } });
+    console.log(`links ${JSON.stringify(this.downloadLinks)}`);
   }
 }
 
@@ -65,6 +77,11 @@ export class Link {
     this.href = rawLink.$.href;
     this.rel = rawLink.$.rel;
   }
+}
+
+enum LinkTypes {
+  IMAGE = "x-stanza-cover-image",
+  DOWNLOAD_LINK = "http://opds-spec.org/acquisition/open-access"
 }
 
 export class Utils {
