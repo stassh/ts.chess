@@ -1,0 +1,70 @@
+{
+  "path": [],
+  "id": ["tag:author:32154"],
+  "contents": [],
+  "links": [
+    { "href": "/opds-opensearch.xml", "rel": "search" },
+    { "href": "/opds/search?searchTerm={searchTerms}", "rel": "search" },
+    { "href": "/opds", "rel": "start" }
+  ],
+  "titles": ["Книги автора Кронин Джастин"],
+  "icons": ["http://flibusta.is//favicon.ico"],
+  "entries": [
+    {
+      "titles": ["Об авторе"],
+      "contents": [
+        "<img src=\"/ia/70/74570/kronin.jpg\" align=left style=\"border:5px solid #ededed; margin: 12px;\"><p><span style=\"font-weight:bold\">Джастин Кронин</span> (англ. <span style=\"font-weight:bold\">Justin Cronin</span>)<br />\nАмериканский писатель, уже  заработавший на вампирах  бешеные деньги и активно раскручиваемый в США.<br />\nРодился в 1962 году в Новой Англии (США).<br />\nЕго роман «Переход» (The Passage) занимает  третью строчку в списке бестселлеров NewYorkTimes. Эпическое полотно на 766-ти страницах рассказывает о кровожадных чудовищах, которые  по ночам безжалостно убивают людей. Это – первая часть трилогии.<br />\nУже идут переговоры об экранизации романа. Права на трилогию проданы издательству за 3, 75 миллионов долларов, а на экранизацию романа студии Fox 2000 за 1,75 млн.<br />\nСайт писателя - <a href=\"http://enterthepassage.com/\">http://enterthepassage.com/</a><br />\n<a href=\"http://www.fantasticfiction.co.uk/c/justin-cronin/\">Библиография</a><br />\n<span style=\"font-weight:bold\">Novels</span><br />\n2001 - Mary and O'Neil<br />\n2004 - The Summer Guest<br />\nSeries <span style=\"font-weight:bold\">Passage</span> - <span style=\"font-weight:bold\">Перерождение</span><br />\n2009 - 1. The Passage - Перерождение<br />\n2012 - 2. The Twelve<br />\n2016 - 3. The City of Mirrors</p>\n"
+      ],
+      "id": [],
+      "links": [
+        {
+          "href": "/ia/70/74570/kronin.jpg",
+          "rel": "http://opds-spec.org/image"
+        },
+        { "href": "/ia/70/74570/kronin.jpg", "rel": "x-stanza-cover-image" },
+        {
+          "href": "/ia/70/74570/kronin.jpg",
+          "rel": "http://opds-spec.org/image/thumbnail"
+        },
+        {
+          "href": "/ia/70/74570/kronin.jpg",
+          "rel": "x-stanza-cover-image-thumbnail"
+        },
+        { "href": "/a/32154", "rel": "alternate" },
+        { "href": "/a/32154", "rel": "http://opds-spec.org/acquisition" },
+        {
+          "href": "/opds/authorsequences/32154",
+          "rel": "http://www.feedbooks.com/opds/facet"
+        },
+        {
+          "href": "/opds/authorsequenceless/32154",
+          "rel": "http://www.feedbooks.com/opds/facet"
+        }
+      ]
+    },
+    {
+      "titles": ["Книги по сериям"],
+      "contents": [],
+      "id": [],
+      "links": [{ "href": "/opds/authorsequences/32154" }]
+    },
+    {
+      "titles": ["Книги вне серий"],
+      "contents": [],
+      "id": [],
+      "links": [{ "href": "/opds/author/32154/authorsequenceless" }]
+    },
+    {
+      "titles": ["Книги по алфавиту"],
+      "contents": [],
+      "id": [],
+      "links": [{ "href": "/opds/author/32154/alphabet" }]
+    },
+    {
+      "titles": ["Книги по дате поступления"],
+      "contents": [],
+      "id": [],
+      "links": [{ "href": "/opds/author/32154/time" }]
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 <div>
     <h1>{{ title }}</h1>
     <nav>
-        <a routerLink="/catalog/opds">Catalog</a>
+        <a routerLink="/catalog" [queryParams]="{ path: 'opds' }">Catalog</a>
         <a routerLink="/dashboard">Dashboard</a>
         <a routerLink="/heroes">Heroes</a>
     </nav>

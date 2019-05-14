@@ -1,0 +1,14 @@
+{
+  "updated": ["2019-05-14T00:28:22+02:00"],
+  "id": ["tag:root:genre:Юмор"],
+  "title": ["Юмор"],
+  "content": [{ "_": "Книги в жанре Юмор", "$": { "type": "text" } }],
+  "link": [
+    {
+      "$": {
+        "href": "/opds/genres/%D0%AE%D0%BC%D0%BE%D1%80",
+        "type": "application/atom+xml;profile=opds-catalog"
+      }
+    }
+  ]
+}
